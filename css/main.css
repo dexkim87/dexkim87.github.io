@@ -1,0 +1,21 @@
+body {background:#000;}
+#wrapper {background:url("../images/game_bg.gif") no-repeat 0 0 #fff; background-size:cover; margin-top:130px; height:530px; position:relative;}
+#wrapper #ryu {width:270px; padding-top:57px;}
+#wrapper #ryu_ready {background:url('../images/ryu-ready-position.gif') no-repeat -100px 0; height: 480px; width: 270px; display:none;}
+#wrapper #ryu_standing {background:url('../images/ryu-standing-still.png') no-repeat -100px 0; height: 480px; width: 270px;}
+#wrapper #ryu_hadouken {background:url('../images/ryu-throwing-hadouken.png') no-repeat -100px 0; display:none; height:659px; width:494px;}
+#wrapper #ryu_cool {background:url('../images/ryu-cool.gif') no-repeat -100px 0; display:none; height:480px; width:270px;}
+#wrapper #hadouken {background:url('../images/hadouken.gif') no-repeat 0 0; display:none; height:90px; width:156px; position:absolute;  top: 225px; left: 340px;}
+p {text-align: left;
+background-color: white;
+width: 100%;
+padding-bottom: 14px;
+line-height: 36px;
+color: black;
+font-family: helvetica;
+font-size: 28px;
+padding-top: 15px;
+padding-left: 32px;
+position: absolute;
+opacity: 0.5;}
+
