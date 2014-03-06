@@ -161,13 +161,11 @@ h1.title {text-shadow: 1px 4px #009365; font-size:61px; text-align:center; margi
 #input_container {height:43px; width:316px; margin:0 auto;}
 #input_field {border:0px; height:43px; width:187px; display:inline-block; padding:0px; vertical-align:top; margin-right:-4px; padding: 0 10px;}
 input[type="submit"] {background:#f0af00; border:0px; color:#fff; font-family:'Berkshire Swash',cursive; width:109px; height:43px; display:inline-block; font-size:21px; vertical-align:top;}
-input[type=checkbox] {display:none;}
-label span {background: url('../img/checkbox.png') no-repeat 0 0; height:40px; width:32px; display:inline-block; margin: 0px 10px -10px 0px;}
-input[type="checkbox"]:checked+label span {background: url('../img/checkbox.png') no-repeat 0 -80px;}
+div.fear_list_item span {background: url('../img/checkbox.png') no-repeat 0 0; height:40px; width:32px; display:inline-block; margin: 0px 10px -10px 0px;}
 .checked_box {background-position:0 -80px;}
 .checked_text {text-decoration:line-through; color:#c9c9c9;}
 
-label {display:inline-block; cursor:pointer; position:relative; margin-right:15px; font-size:18px; margin-left:25px;}  
+div.fear_list_item {display:inline-block; cursor:pointer; position:relative; margin-right:15px; font-size:18px; margin-left:25px;}  
 
 #task_list_container {position:relative; width:906px; height:432px; margin: 50px auto 0 auto;}
 #task_list_container h2 {color:#fff; background:#049495; display:inline-block; width:100%; margin: 25px 0px; padding: 14px 0; text-align: center;}

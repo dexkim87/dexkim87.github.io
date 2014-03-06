@@ -4,7 +4,7 @@ $(document).ready(function() {
 	    var input = $("#input_field").val();
         var inputlength = $("#input_field").val().length;
 	    if (inputlength>0) {
-		$("#fears_list").append("<input type='checkbox' class='checkbox' name='checkbox' value='value'><label><span></span>"+input+"</label>");
+		$("#fears_list").append("<span></span><div class='fear_list_item'>"+input+"</div>");
 		}
 		else {
 			alert("Do you fear nothing? Type something before submitting!")
