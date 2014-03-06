@@ -161,7 +161,7 @@ h1.title {text-shadow: 1px 4px #009365; font-size:61px; text-align:center; margi
 #input_container {height:43px; width:316px; margin:0 auto;}
 #input_field {border:0px; height:43px; width:187px; display:inline-block; padding:0px; vertical-align:top; margin-right:-4px; padding: 0 10px;}
 input[type="submit"] {background:#f0af00; border:0px; color:#fff; font-family:'Berkshire Swash',cursive; width:109px; height:43px; display:inline-block; font-size:21px; vertical-align:top;}
-span {background: url('../img/checkbox.png') no-repeat 0 0; height:40px; width:32px; display:block; margin: 0px 10px -10px 0px;}
+a.fear_list_icon {background: url('../img/checkbox.png') no-repeat 0 0; height:40px; width:32px; display:block; margin: 0px 10px -10px 0px;}
 .checked_box {background-position:0 -80px;}
 .checked_text {text-decoration:line-through; color:#c9c9c9;}
 
