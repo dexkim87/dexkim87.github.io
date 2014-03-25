@@ -1,19 +1,38 @@
-$(document).ready(function() {
-		$("#submit").click(function(event){
-	    event.preventDefault();
-	    var input = $("#input_field").val();
-        var inputlength = $("#input_field").val().length;
-	    if (inputlength>0) {
-		$("#fears_list").append("<a href='#' class='fear_list_icon'></a><div class='fear_list_item'>"+input+"</div>");
-		 $("a.fear_list_icon").click(function(){
-	    $(this).toggleClass("checked_box");
-	    $(this).parent().toggleClass("checked_text");
-	    console.log("hi");
-    })
-
-		}
-		else {
-			alert("Do you fear nothing? Type something before submitting!")
-		}
-   	})
+$(document).ready(function () {
+	$("#submit").on("click", function (event) {
+			event.preventDefault();
+			var fearitem = $("#input_field").val();
+			var fearitemtrimmed = $.trim(fearitem);
+			if (fearitemtrimmed.length > 18){
+				$(".toomanychars").show();
+				$(".toolittlechars").hide();
+			}
+			else if (fearitemtrimmed.length < 1) {
+				$(".toolittlechars").show();
+				$(".toomanychars").hide();
+			}
+			else {
+				$("blockquote").hide();
+				$.trim(fearitem);
+				event.preventDefault();
+				$("#input_field").val("");	
+				$("#fears_list").append("<li id='fear_item'><a href='#'>"+ fearitem +"</a></li>");	
+				$("#clear_all_btn").show();			
+		    }
+	});
+	$("#fears_list").on("click","li", function (event) {
+		event.preventDefault();
+		$(this).toggleClass("erased");
+		$(this).children().toggleClass("erased_text"); 
+	});
+	if ($("#fears_list li").not(".erased")){
+		$("#fears_list li").on("mouseover", function () {
+			$(this).toggleClass(".hovered");	
+		})
+	}
+	$("#clear_all_btn").on("click", function(event) {
+		event.preventDefault();
+		$("#fears_list").empty();
+		$(this).hide();
+	});
 });

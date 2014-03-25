@@ -160,16 +160,22 @@ body {height:100%; font-family:'Berkshire Swash', cursive; background:#00b383;}
 h1.title {text-shadow: 1px 4px #009365; font-size:61px; text-align:center; margin-top:100px;}
 #input_container {height:43px; width:316px; margin:0 auto;}
 #input_field {border:0px; height:43px; width:187px; display:inline-block; padding:0px; vertical-align:top; margin-right:-4px; padding: 0 10px;}
+blockquote {position: relative;padding: 15px;margin: 100px 0 0.5em;color: #333;background: #fff;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px; margin:40px auto 0 auto; max-width:200px; font-family:arial; font-size:14px; line-height:1.4; color:#00674b; display:none;}
+blockquote:after {content: "";position: absolute; top: -30px; left: 50px; border: 15px solid transparent; border-bottom-color: #fff; display: block; width: 0;}
 input[type="submit"] {background:#f0af00; border:0px; color:#fff; font-family:'Berkshire Swash',cursive; width:109px; height:43px; display:inline-block; font-size:21px; vertical-align:top;}
-a.fear_list_icon {background: url('../img/checkbox.png') no-repeat 0 0; height:40px; width:32px; display:block; margin: 0px 10px -10px 0px;}
-.checked_box {background-position:0 -80px !important;}
-.checked_text {text-decoration:line-through; color:#c9c9c9;}
+li#fear_item {background: url('../img/checkbox.png') no-repeat 0 0; list-style:none; list-style-type:none; display:inline-block; margin: 0px 10px -10px 0px; padding: 10px 0 10px 0px;}
+li#fear_item a {padding-left: 38px; text-decoration:none; color:#7b7b7b;}
+.erased {background-position:0 -80px !important;}
+.erased_text {text-decoration:line-through !important; color:#c9c9c9 !important;}
 
 div.fear_list_item {display:inline-block; cursor:pointer; position:relative; margin-right:15px; font-size:18px; margin-left:25px;}  
 
 #task_list_container {position:relative; width:906px; height:432px; margin: 50px auto 0 auto;}
 #task_list_container h2 {color:#fff; background:#049495; display:inline-block; width:100%; margin: 25px 0px; padding: 14px 0; text-align: center;}
 #task_list_container #task_list_wrapper {background:#fff; max-width:517px; min-height:427px; margin:0 auto;}
+#task_list_container #task_list_wrapper a#clear_all_btn {padding:5px 20px 5px 20px; background:#049495; border-radius:10px; color:#fff; text-decoration:none; position:absolute; bottom: 30px; left:50%; margin-left:-74px; box-shadow: 0px 3px #407373; text-shadow: 0 -1px #407373; display:none;}
+#task_list_container #task_list_wrapper a:hover#clear_all_btn {}
+#task_list_container #task_list_wrapper a:active#clear_all_btn {}
 
 #monster_1 {background:url('../img/monster_1.png') no-repeat 0 0; width:382px; height:317px; position:absolute; bottom: 0px; left: 28px; z-index: -1;}
 #monster_2 {background:url('../img/monster_2.png') no-repeat 0 0; width:223px; height:134px; position:absolute; bottom: -32px; left: 37px;}
